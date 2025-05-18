@@ -1,7 +1,8 @@
-import { fetchTrendingMovies } from '../../services/api';
-import MovieList from '../../components/MovieList/MovieList';
-import Loader from '../../components/Loader/Loader';
-import styles from './HomePage.module.css';
+import { useState, useEffect } from "react";
+import { fetchTrendingMovies } from "../../services/api";
+import MovieList from "../../components/MovieList/MovieList";
+import Loader from "../../components/Loader/Loader";
+import styles from "./HomePage.module.css";
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);
@@ -10,7 +11,7 @@ export default function HomePage() {
   useEffect(() => {
     setLoading(true);
     fetchTrendingMovies()
-      .then(data => setMovies(data))
+      .then((data) => setMovies(data))
       .catch(console.error)
       .finally(() => setLoading(false));
   }, []);

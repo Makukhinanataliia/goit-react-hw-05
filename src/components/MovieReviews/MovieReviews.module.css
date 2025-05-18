@@ -1,5 +1,22 @@
-.wrapper {
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-radius: 0.5rem;
+.reviewList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reviewItem {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.reviewItem h4 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.reviewItem p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #444;
 }
