@@ -19,6 +19,7 @@ export default function App() {
   return (
     <>
       <Navigation />
+      <main className="main-content">
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+      </main>
     </>
   );
 }

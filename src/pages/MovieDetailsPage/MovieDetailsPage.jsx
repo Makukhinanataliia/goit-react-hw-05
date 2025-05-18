@@ -89,7 +89,6 @@ export default function MovieDetailsPage() {
           </li>
         </ul>
       </div>
-
       <Outlet />
     </div>
   );

@@ -1,8 +1,14 @@
 .nav {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   gap: 20px;
-  padding: 10px;
+  padding: 10px 2rem; 
   background-color: #222;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .nav a {
